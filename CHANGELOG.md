@@ -1,3 +1,11 @@
+## [1.0.1](https://github.com/Ecogenomics/gtdb_precurate/compare/v1.0.0...v1.0.1) (2023-12-12)
+
+
+### Bug Fixes
+
+* **build:** Missing dependency typer. ([0be0cad](https://github.com/Ecogenomics/gtdb_precurate/commit/0be0cad68e9b356635248f1cebb17b1404982c30))
+* **build:** Missing dependency typer. ([3759278](https://github.com/Ecogenomics/gtdb_precurate/commit/375927861076412e7ca726181380ac36e8c5820b))
+
 # 1.0.0 (2023-12-12)
 
 
