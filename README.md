@@ -28,3 +28,4 @@ The following optional arguments are available:
 
 * `--min-bootstrap` - This is the minimum bootstrap value to consider a node to be supported. Default: 95.0.
 * `--debug` - This enables debug logging. Default: False.
+
