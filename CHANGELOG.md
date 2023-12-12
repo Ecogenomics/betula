@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Ecogenomics/gtdb_precurate/compare/v1.0.1...v1.0.2) (2023-12-12)
+
+
+### Bug Fixes
+
+* **cli:** Fix packaging issues with running CLI. ([44651c7](https://github.com/Ecogenomics/gtdb_precurate/commit/44651c7ef44c352f336f80b0fd21ca5652e8931d))
+
 ## [1.0.1](https://github.com/Ecogenomics/gtdb_precurate/compare/v1.0.0...v1.0.1) (2023-12-12)
 
 
