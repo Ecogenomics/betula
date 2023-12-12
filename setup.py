@@ -43,7 +43,7 @@ setup(
     description=meta['description'],
     entry_points={
         'console_scripts': [
-            'gtdb_precurate = gtdb_precurate.__main__:main'
+            'gtdb_precurate = gtdb_precurate.__main__:app'
         ]
     },
     install_requires=["dendropy>=4.1.0", "typer[all]"],

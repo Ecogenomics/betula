@@ -1,7 +1,6 @@
 import sys
-from pathlib import Path
-
 import typer
+from pathlib import Path
 
 from gtdb_precurate import __version__
 from gtdb_precurate.method.create_denovo import create_denovo_clusters
@@ -11,7 +10,10 @@ from gtdb_precurate.model.red_dict import RedDict
 from gtdb_precurate.model.tree import Tree
 from gtdb_precurate.util.logger import init_logger
 
+app = typer.Typer()
 
+
+@app.command()
 def main(
         metadata: Path,
         red_dict: Path,
@@ -67,4 +69,4 @@ def main(
 
 
 if __name__ == '__main__':
-    typer.run(main)
+    app()
