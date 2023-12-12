@@ -46,7 +46,7 @@ setup(
             'gtdb_precurate = gtdb_precurate.__main__:main'
         ]
     },
-    install_requires=["dendropy>=4.1.0, typer[all]"],
+    install_requires=["dendropy>=4.1.0", "typer[all]"],
     license=meta['license'],
     long_description=readme(),
     long_description_content_type='text/markdown',
