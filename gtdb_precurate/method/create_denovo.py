@@ -1,11 +1,11 @@
 import logging
 from collections import defaultdict
 
-from betula.model.metadata import MetadataFile
-from betula.model.node_label import NodeLabel
-from betula.model.ranks import RANKS
-from betula.model.red_dict import RedDict
-from betula.model.tree import Tree
+from gtdb_precurate.model.metadata import MetadataFile
+from gtdb_precurate.model.node_label import NodeLabel
+from gtdb_precurate.model.ranks import RANKS
+from gtdb_precurate.model.red_dict import RedDict
+from gtdb_precurate.model.tree import Tree
 
 
 def get_gids_missing_ranks(tree):
@@ -106,7 +106,7 @@ def create_taxon(rank, meta, new_taxa, tree, gids):
 def create_ranks(d_rank_to_leaf_candidates, tree, meta):
     # We will now iterate from the highest to lower rank to find shared nodes
     created = set()
-    log = logging.getLogger('betula')
+    log = logging.getLogger('gtdb_precurate')
     for cur_rank, d_leaf_to_candidate_node in sorted(d_rank_to_leaf_candidates.items(),
                                                      key=lambda x: RANKS.index(x[0])):
 
@@ -142,7 +142,7 @@ def create_denovo_clusters(
 ):
     """Creates de novo clusters from the specified tree and metadata."""
 
-    log = logging.getLogger('betula')
+    log = logging.getLogger('gtdb_precurate')
 
     # First, we need to find all genomes that are missing ranks
     d_leaf_to_missing_ranks = get_gids_missing_ranks(tree)

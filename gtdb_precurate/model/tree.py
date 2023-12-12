@@ -4,9 +4,9 @@ from typing import Set, Dict, FrozenSet, Iterator
 
 import dendropy
 
-from betula.model.node_label import NodeLabel
-from betula.model.ranks import RANKS, TaxString
-from betula.util.tree import parse_node_label
+from gtdb_precurate.model.node_label import NodeLabel
+from gtdb_precurate.model.ranks import RANKS, TaxString
+from gtdb_precurate.util.tree import parse_node_label
 
 
 class Tree:

@@ -3,13 +3,13 @@ from pathlib import Path
 
 import typer
 
-from betula import __version__
-from betula.method.create_denovo import create_denovo_clusters
-from betula.model.metadata import MetadataFile
-from betula.model.ranks import RANKS
-from betula.model.red_dict import RedDict
-from betula.model.tree import Tree
-from betula.util.logger import init_logger
+from gtdb_precurate import __version__
+from gtdb_precurate.method.create_denovo import create_denovo_clusters
+from gtdb_precurate.model.metadata import MetadataFile
+from gtdb_precurate.model.ranks import RANKS
+from gtdb_precurate.model.red_dict import RedDict
+from gtdb_precurate.model.tree import Tree
+from gtdb_precurate.util.logger import init_logger
 
 
 def main(
@@ -25,14 +25,14 @@ def main(
 
     # Initialise the logger
     log = init_logger(out_directory, debug)
-    log.info(f'betula v{__version__}')
-    log.info(f'betula {" ".join(sys.argv[1:])}')
+    log.info(f'gtdb_precurate v{__version__}')
+    log.info(f'gtdb_precurate {" ".join(sys.argv[1:])}')
 
     # Create the output paths
     if 'red_decorated' in red_decorated_tree.name:
-        tree_path_out = out_directory / red_decorated_tree.name.replace('red_decorated', 'betula')
+        tree_path_out = out_directory / red_decorated_tree.name.replace('red_decorated', 'gtdb_precurate')
     else:
-        tree_path_out = out_directory / f'{red_decorated_tree.stem}.betula{red_decorated_tree.suffix}'
+        tree_path_out = out_directory / f'{red_decorated_tree.stem}.gtdb_precurate{red_decorated_tree.suffix}'
     report_path_out = out_directory / f'{tree_path_out.stem}_report.tsv'
 
     # Read the RED dictionary

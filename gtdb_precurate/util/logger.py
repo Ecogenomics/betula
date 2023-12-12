@@ -5,7 +5,7 @@ from pathlib import Path
 
 def init_logger(out_dir: Path, debug=False):
     # Logger setup
-    logger = logging.getLogger('betula')
+    logger = logging.getLogger('gtdb_precurate')
     if debug:
         logger.setLevel(logging.DEBUG)
     else:
@@ -20,7 +20,7 @@ def init_logger(out_dir: Path, debug=False):
     logger.addHandler(console_handler)
 
     # File handler
-    file_handler = logging.FileHandler(out_dir / 'betula.log')
+    file_handler = logging.FileHandler(out_dir / 'gtdb_precurate.log')
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 

@@ -1,7 +1,7 @@
 import json
 from pathlib import Path
 
-from betula.model.ranks import RANKS
+from gtdb_precurate.model.ranks import RANKS
 
 
 class RedDict:

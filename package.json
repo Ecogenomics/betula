@@ -1,5 +1,5 @@
 {
-  "name": "betula",
+  "name": "gtdb_precurate",
   "devDependencies": {
     "@semantic-release/github": "^9.2.5",
     "@semantic-release/changelog": "^6.0.3",
